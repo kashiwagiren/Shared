@@ -13,4 +13,4 @@ Output on the terminal should be:
 (30, '2026-05-10', 'Sofia Ramos', 'BSIT', 90, 'Passed')
 
 
-And there should be a file called "student_etl.db" after running "category-A.py"
+And there should be a file called "student_etl.db" after running "category-A.py" 

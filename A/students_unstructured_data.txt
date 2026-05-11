@@ -7,4 +7,4 @@ Student: Liza Cruz, Program: BSBA, Grade: 95, Result: Passed, Date: 2026-05-06
 Date=2026-05-07 | Student Name=Mark Lim | Course=BSIT | Score=58 | Status=Failed
 2026-05-08 / Name: Ella Gomez / Course: BSCS / Score: 87 / Status: Passed
 Student: Ramon Diaz; Course: BSCpE; Score: 73; Status: Passed; Date: 2026-05-09
-[2026-05-10] Name: Sofia Ramos | Course: BSIT | Score: 90 | Status: Passed
+[2026-05-10] Name: Sofia Ramos | Course: BSIT | Score: 90 | Status: Passed 
