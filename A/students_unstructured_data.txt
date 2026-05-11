@@ -1,0 +1,10 @@
+2026-05-01 | Name: Juan Dela Cruz | Course: BSIT | Score: 88 | Status: Passed
+Student=Maria Santos; Course=BSCS; Score=92; Status=Passed; Date=2026-05-02
+[2026/05/03] Pedro Reyes - BSIT - score: 75 - passed
+Name: Ana Lopez | Date: May 04, 2026 | Course: BSCpE | Score: 69 | Status: Failed
+2026-05-05 -- Carlo Tan -- Course: BSIT -- Score: 81 -- Status: Passed
+Student: Liza Cruz, Program: BSBA, Grade: 95, Result: Passed, Date: 2026-05-06
+Date=2026-05-07 | Student Name=Mark Lim | Course=BSIT | Score=58 | Status=Failed
+2026-05-08 / Name: Ella Gomez / Course: BSCS / Score: 87 / Status: Passed
+Student: Ramon Diaz; Course: BSCpE; Score: 73; Status: Passed; Date: 2026-05-09
+[2026-05-10] Name: Sofia Ramos | Course: BSIT | Score: 90 | Status: Passed

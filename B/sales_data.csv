@@ -1,0 +1,11 @@
+date,product,category,quantity,unit_price,payment_method
+2026-05-01,Keyboard,Accessories,3,450,Cash
+2026-05-01,Mouse,Accessories,5,250,GCash
+2026-05-02,Monitor,Electronics,2,5200,Credit Card
+2026-05-03,USB Cable,Accessories,10,120,Cash
+2026-05-04,Laptop,Electronics,1,35000,Credit Card
+2026-05-05,Printer,Electronics,2,6500,GCash
+2026-05-06,Office Chair,Furniture,4,2800,Cash
+2026-05-07,Desk,Furniture,2,4500,Credit Card
+2026-05-08,Webcam,Electronics,3,1500,GCash
+2026-05-09,Headset,Accessories,6,850,Cash
