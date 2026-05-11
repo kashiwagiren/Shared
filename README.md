@@ -1,3 +1,5 @@
+# NOTE: AYAW E COPY PASTE DITSO ANG CODE SINCE MA ERROR GYUD NA, LEARN TO READ ASSHOLES
+
 ## ETL Practical Exam Category A
 
 Topic: Load unstructured TXT data into SQLite3 using Python
