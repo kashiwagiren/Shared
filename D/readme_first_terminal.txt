@@ -6,4 +6,4 @@ Output on the terminal should be:
 (4, 'Ana Lopez', 'BSCpE', 68, 72, 85, 73.4, 'Failed', 'Attendance is acceptable but scores need improvement.')
 (5, 'Carlo Tan', 'BSIT', 81, 84, 91, 84.5, 'Passed', 'Good performance and consistent attendance.')
 
-And there should be a file called "elt_student_data.db" after running "category-D.py"
+And there should be a file called "elt_student_data.db" after running "category-D.py" 
