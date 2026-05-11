@@ -70,4 +70,4 @@ Complete only the SQLite3 parts:
 
 1. CREATE TABLE
 2. INSERT INTO
-3. SELECT FROM
+3. SELECT FROM 
