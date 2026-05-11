@@ -12,4 +12,4 @@ Output on the terminal should be:
 19   2026-05-08     Webcam            Electronics    3       1500.00     4500.00     GCash          
 20   2026-05-09     Headset           Accessories    6       850.00      5100.00     Cash
 
-And there should be a file called "sales_etl.db" after running "category-B.py"
+And there should be a file called "sales_etl.db" after running "category-B.py" 
