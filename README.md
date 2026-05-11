@@ -13,6 +13,7 @@ Complete only the following SQLite3 parts:
 
 
 
+
 ## [ETL Practical Exam Category B](./B)
 
 Structured Data ETL Practical Exam
@@ -24,6 +25,7 @@ Complete only the SQLite3 parts:
 1. CREATE TABLE
 2. INSERT INTO
 3. SELECT FROM
+
 
 
 
@@ -63,6 +65,7 @@ The program will:
 
 
 
+
 ## [ETL Practical Exam Category D](./D)
 
 Structured CSV + Unstructured TXT → Extract → Load → Transform → Select
@@ -72,4 +75,4 @@ Complete only the SQLite3 parts:
 
 1. CREATE TABLE
 2. INSERT INTO
-3. SELECT FROM 
+3. SELECT FROM
