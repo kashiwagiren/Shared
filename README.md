@@ -1,6 +1,6 @@
-# NOTE: AYAW E COPY PASTE DITSO ANG CODE SINCE MA ERROR GYUD NA, LEARN TO READ ASSHOLES
+# NOTE: AYAW E COPY PASTE DITSO ANG CODE KAY MA ERROR GYUD NA, LEARN TO READ ASSHOLES
 
-## ETL Practical Exam Category A
+## [ETL Practical Exam Category A](./A)
 
 Topic: Load unstructured TXT data into SQLite3 using Python
 
@@ -13,7 +13,7 @@ Complete only the following SQLite3 parts:
 
 
 
-## ETL Practical Exam Category B
+## [ETL Practical Exam Category B](./B)
 
 Structured Data ETL Practical Exam
 Topic: Load structured CSV data into SQLite3 using Python
@@ -27,7 +27,7 @@ Complete only the SQLite3 parts:
 
 
 
-## ETL Practical Exam Category C
+## [ETL Practical Exam Category C](./C)
 
 Structured Data ETL Practical Exam Topic: Load structured CSV data into SQLite3 using Python
 
@@ -63,7 +63,7 @@ The program will:
 
 
 
-## ETL Practical Exam Category D
+## [ETL Practical Exam Category D](./D)
 
 Structured CSV + Unstructured TXT → Extract → Load → Transform → Select
 
