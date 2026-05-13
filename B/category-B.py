@@ -1,21 +1,24 @@
 """
-Structured Data ETL Practical Exam Answer Key
+Structured Data ETL Practical Exam
 Topic: Load structured CSV data into SQLite3 using Python
 
-This version contains the complete answer for:
+Student Task:
+Complete only the SQLite3 parts:
 
 1. CREATE TABLE
 2. INSERT INTO
 3. SELECT FROM
+
+The extraction and transformation code is already provided.
 """
 
 import csv
-import sqlite3
 import os
+import sqlite3
 
-script_dir = os.path.dirname(os.path.abspath(__file__))
-CSV_FILE = os.path.join(script_dir, "sales_data.csv")
-DB_FILE = os.path.join(script_dir, "sales_etl.db")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CSV_FILE = os.path.join(BASE_DIR, "sales_data.csv")
+DB_FILE = os.path.join(BASE_DIR, "sales_etl.db")
 
 
 def extract_data():
@@ -60,7 +63,27 @@ def connect_database():
 
 
 def create_table(cursor):
-    cursor.execute("""
+    """
+    TODO #1:
+    Write the SQLite3 CREATE TABLE statement.
+
+    Table name:
+    sales_records
+
+    Columns:
+    id INTEGER PRIMARY KEY AUTOINCREMENT
+    date TEXT
+    product TEXT
+    category TEXT
+    quantity INTEGER
+    unit_price REAL
+    total_sales REAL
+    payment_method TEXT
+    """
+
+    # Write CREATE TABLE code here
+    cursor.execute(
+        """
         CREATE TABLE IF NOT EXISTS sales_records (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             date TEXT,
@@ -71,68 +94,72 @@ def create_table(cursor):
             total_sales REAL,
             payment_method TEXT
         )
-    """)
+        """
+    )
 
 
 def insert_records(cursor, records):
-    cursor.execute("DELETE FROM sales_records")
+    """
+    TODO #2:
+    Write the SQLite3 INSERT INTO statement.
+
+    Insert the following fields:
+    date
+    product
+    category
+    quantity
+    unit_price
+    total_sales
+    payment_method
+    """
+
+    # Write INSERT INTO code here
+    insert_query = """
+        INSERT INTO sales_records (
+            date,
+            product,
+            category,
+            quantity,
+            unit_price,
+            total_sales,
+            payment_method
+        ) VALUES (?, ?, ?, ?, ?, ?, ?)
+    """
 
     for record in records:
-        cursor.execute("""
-            INSERT INTO sales_records (
-                date,
-                product,
-                category,
-                quantity,
-                unit_price,
-                total_sales,
-                payment_method
-            )
-            VALUES (?, ?, ?, ?, ?, ?, ?)
-        """, (
-            record["date"],
-            record["product"],
-            record["category"],
-            record["quantity"],
-            record["unit_price"],
-            record["total_sales"],
-            record["payment_method"]
-        ))
+        cursor.execute(
+            insert_query,
+            (
+                record["date"],
+                record["product"],
+                record["category"],
+                record["quantity"],
+                record["unit_price"],
+                record["total_sales"],
+                record["payment_method"],
+            ),
+        )
 
 
 def select_records(cursor):
-    cursor.execute("""
-        SELECT id, date, product, category, quantity, unit_price, total_sales, payment_method
-        FROM sales_records
-    """)
+    """
+    TODO #3:
+    Write the SQLite3 SELECT statement.
 
+    Select and display all records from sales_records.
+
+    Expected columns:
+    id, date, product, category, quantity, unit_price, total_sales, payment_method
+    """
+
+    # Write SELECT code here
+    cursor.execute(
+        "SELECT id, date, product, category, quantity, unit_price, total_sales, payment_method FROM sales_records"
+    )
     rows = cursor.fetchall()
 
-    print("\nSALES RECORDS")
-    print("-" * 110)
-    print(
-        f"{'ID':<5}"
-        f"{'Date':<15}"
-        f"{'Product':<18}"
-        f"{'Category':<15}"
-        f"{'Qty':<8}"
-        f"{'Price':<12}"
-        f"{'Total':<12}"
-        f"{'Payment':<15}"
-    )
-    print("-" * 110)
-
     for row in rows:
-        print(
-            f"{row[0]:<5}"
-            f"{row[1]:<15}"
-            f"{row[2]:<18}"
-            f"{row[3]:<15}"
-            f"{row[4]:<8}"
-            f"{row[5]:<12.2f}"
-            f"{row[6]:<12.2f}"
-            f"{row[7]:<15}"
-        )
+        print(row)
 
 
 def main():
@@ -151,4 +178,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main() 
+    main()
