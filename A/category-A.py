@@ -203,6 +203,7 @@ def select_records(cursor):
     for row in rows:
         print(row)
     # ends here
+    pass
 # Ends here
 
 def main():
